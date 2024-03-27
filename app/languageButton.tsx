@@ -1,5 +1,5 @@
-import English from "./english.png";
-import French from "./french.png";
+import English from "../assets/english.png";
+import French from "../assets/french.png";
 import Image from "next/image";
 
 type LanguageButtonProps = {

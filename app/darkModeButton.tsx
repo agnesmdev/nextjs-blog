@@ -1,5 +1,5 @@
-import Night from "./night.png";
-import Light from "./light.png";
+import Night from "../assets/night.png";
+import Light from "../assets/light.png";
 import Image from "next/image";
 
 type DarkModeButtonProps = {
