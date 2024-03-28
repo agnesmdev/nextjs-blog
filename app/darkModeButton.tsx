@@ -1,5 +1,3 @@
-import Night from "../public/icons/night.png";
-import Light from "../public/icons/light.png";
 import Image from "next/image";
 
 type DarkModeButtonProps = {
@@ -14,8 +12,8 @@ export default function DarkModeButton(props: DarkModeButtonProps) {
     setDarkMode(!darkMode);
   }
 
-	const LightButton = <Image className="w-10 h-10" src={Night} alt="dark mode" />
-	const DarkButton = <Image className="w-10 h-10" src={Light} alt="light mode" />
+	const LightButton = <Image src="/icons/night.png" alt="dark mode" width={40} height={40} />
+	const DarkButton = <Image src="/icons/light.png" alt="light mode" width={40} height={40} />
 
   return <a onClick={updateDarkMode} className="fixed top-5 right-8 cursor-pointer flex justify-self-center justify-center items-center rounded-full w-18 h-18 hover:bg-gray-700 hover:shadow-lg hover:shadow-gray-600/50 lg:hidden">
 		{darkMode ? DarkButton : LightButton}

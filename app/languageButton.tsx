@@ -1,5 +1,3 @@
-import English from "../public/icons/english.png";
-import French from "../public/icons/french.png";
 import Image from "next/image";
 
 type LanguageButtonProps = {
@@ -16,8 +14,8 @@ export default function LanguageButton(props: LanguageButtonProps) {
     setLang(lang.startsWith("fr") ? "en" : "fr");
   }
 
-	const EnglishButton = <Image className="w-10 h-10" src={English} alt="english" />
-	const FrenchButton = <Image className="w-10 h-10" src={French} alt="francais" />
+	const EnglishButton = <Image src="/icons/english.png" alt="english" width={40} height={40} />
+	const FrenchButton = <Image src="/icons/french.png" alt="francais" width={40} height={40} />
 
   return <a onClick={updateDarkMode} className={`fixed top-5 left-8 cursor-pointer flex justify-self-center justify-center items-center rounded-full w-18 h-18 lg:w-14 lg:h-14 lg:mr-6 ${hoverColor} lg:static`}>
 		{lang.startsWith("fr") ? EnglishButton : FrenchButton}
