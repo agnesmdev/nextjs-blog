@@ -1,7 +1,9 @@
 /** @type {import('next').NextConfig} */
+const isProd = process.env.NODE_ENV === 'production'
+
 const nextConfig = {
-    basePath: "/nextjs-blog",
-    assetPrefix: "/nextjs-blog/",
+    basePath: isProd ? "/nextjs-blog" : "",
+    assetPrefix: isProd ? "https://agnesmdev.github.io/nextjs-blog/" : undefined,
     output: "export",
     reactStrictMode: true,
     images: {
