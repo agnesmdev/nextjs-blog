@@ -1,8 +1,9 @@
 import Image from "next/image";
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
-import {faEnvelope, faHeart, faStar, faSave} from '@fortawesome/free-solid-svg-icons'
-import {faLinkedin, faTwitter, faGithub} from '@fortawesome/free-brands-svg-icons'
-import {translationFr, translationEn} from "./translation";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome"
+import {faEnvelope, faHeart, faStar, faSave} from "@fortawesome/free-solid-svg-icons"
+import {faLinkedin, faTwitter, faGithub} from "@fortawesome/free-brands-svg-icons"
+import translationFr from "../public/locales/fr/translation.json";
+import translationEn from "../public/locales/en/translation.json";
 import DarkModeToggle from "@/app/darkModeToggle";
 import LanguageButton from "@/app/languageButton";
 import MediaButton from "@/app/mediaButton";

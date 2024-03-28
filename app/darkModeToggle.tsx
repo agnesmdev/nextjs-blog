@@ -12,7 +12,7 @@ export default function DarkModeToggle(props: LanguageButtonProps) {
 
   return <div className="fixed justify-center top-5 right-6 hidden lg:flex lg:static lg:w-auto lg:mr-6">
 		<label className="switch-name">
-			<input type="checkbox" className="checkbox" onClick={updateDarkMode} checked={!darkMode}/>
+			<input type="checkbox" className="checkbox" onChange={updateDarkMode} checked={!darkMode}/>
 			<div className="back"></div>
 			<svg className="moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
 				<path
