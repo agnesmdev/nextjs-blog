@@ -53,9 +53,9 @@ export default function Home(props: HomeProps) {
         </div>
       </div>
 
-      <div className="relative flex place-items-center">
+      <div className="relative flex justify-center">
         <Image
-          className={`relative rounded-full mt-12 lg:mt-0 lg:h-full lg:w-full shadow-2xl ${boxShadow}`}
+          className={`relative rounded-full mt-12 lg:mt-0 lg:h-1/2 lg:w-1/2 shadow-2xl ${boxShadow}`}
           src="/agnes.jpg"
           alt={t("photoAlt")}
           width={200}
